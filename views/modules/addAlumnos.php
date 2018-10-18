@@ -27,14 +27,13 @@
       </div>
 
       <div class="form-group">
-            <select class="form-control">
-            <option selected disabled>Carrera</option>
-              <option>ITI</option>
-              <option>LAGPyMES</option>
-              <option>ITM</option>
-              <option>IM</option>
-              <option>ISA</option>
-          </select>
+            <!-- <select class="form-control">
+            <option selected disabled>Carrera</option>-->
+              <?php
+                $mvc = new MvcController();
+                $mvc->getCarrerasCmb();
+              ?>
+          <!--</select>-->
       </div>
 
         <div class="form-group">

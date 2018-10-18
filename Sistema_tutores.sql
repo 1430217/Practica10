@@ -41,3 +41,7 @@ create table session_tutoria(
     foreign key (idMaestro) references maestros(idMaestro),
     primary key (idSesion)
 );
+ 
+insert into carreras (nombre) values('Ing. en Tec. de la informacion'), ('Lic. en Admon. de G. de PyMES'),('Ing. en Mecatronica'), 
+														('ing. en Tec. de Manufactura'),('Ing. en Sistemas Automotrices');
+

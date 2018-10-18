@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lstado de alumnos</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Lisatdo de alumnos</h3>
+              <h3 class="box-title">Lisatdo de tutorias</h3>
 
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -32,36 +32,39 @@
                 </div>
               </div>
             </div>
-
+            
             <div class="box-body table-responsive no-padding">
               <table class="table table-hover">
                 <tr>
-                  <th>Matricula</th>
-                  <th>Nombre</th>
-                  <th>Carrera</th>
-                  <th>Maestro</th>
-                  <th>Editar</th>
-                  <th>Eliminar</th>
-                  <th>Visualizar</th>
+                  <th>ID de la sesión</th>
+                  <th>Nombre del alumno</th>
+                  <th>Nombre del tutor</th>
+                  <th>fecha</th>
+                  <th>Hora</th>
+                  <th>Categoria</th>
+                  <th>Tipo</th>
+                  <th>Descripción</th>
                 </tr>
                 <tr>
                   <td>1430217</td>
                   <td>Gonzalo Cesar Raymundo Marténez Reséndez</td>
-                  <td>ITI</td>
                   <td>Marco Aurelio Nuño Maganda</td>
-                  <td><button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></button></td>
-                  <td><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-                  <td><button class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                  <td>17/10/2018</td>
+                  <td>15:00</td>
+                  <td>Justificante</td>
+                  <td>Individual</td>
+                  <td>Justificar faltas</td>
                 </tr>
 
                 <tr>
                   <td>1430471</td>
                   <td>Jesús Antonio Vega Rodríguez</td>
-                  <td>ITI</td>
                   <td>Jorge Arturo Hernandez Almazan</td>
-                  <td><button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></button></td>
-                  <td><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-                  <td><button class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                  <td>17/10/2018</td>
+                  <td>15:00</td>
+                  <td>Sesion grupal de tutorias</td>
+                  <td>Grupal</td>
+                  <td>Realimentación de alumnos hacía el profesor</td>
                 </tr>
             </table>
         </div>
