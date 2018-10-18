@@ -13,13 +13,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition register-page">
-  <div class="register-box">
-    <div class="register-logo">
-      <b>Registro</b>TAW</a>
-    </div>
-
     <div class="register-box-body">
-      <p class="login-box-msg">Formualrio de registro</p>
+      <p class="login-box-msg">Formualrio de registro para maestros</p>
 
       <form method="post">
         <div class="form-group has-feedback">
@@ -32,8 +27,9 @@
           <span class="glyphicon glyphicon-user form-control-feedback"></span>
         </div>
 
-        <div class="form-group has-feedback">
-          <select name="idCarrera">
+        <div class="form-group">
+          <select name="idCarrera" class="form-control">
+          <option selected disabled>Carrera</option>
             <?php
               $mvc = new MvcController();
               $mvc->getCarrerasCmb();
@@ -60,10 +56,8 @@
         </div>
 
       </form>
-
-      <a href="login.php" class="text-center">Ya tengo cuenta</a>
     </div>
-  </div>
+  
 
   <!-- Lo hice para verificar si los datos se enviaban por post
     < ?php
@@ -86,9 +80,7 @@
 
   if (isset($_GET['action'])) {
 
-		if ($_GET['action'] == 'ok') 
+		if ($_GET['action'] === 'ok') 
 			echo 'Registro Exitoso';
-		else 
-			echo 'Error al registrar';	
 	}
 ?>

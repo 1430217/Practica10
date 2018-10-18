@@ -44,4 +44,5 @@ create table session_tutoria(
  
 insert into carreras (nombre) values('Ing. en Tec. de la informacion'), ('Lic. en Admon. de G. de PyMES'),('Ing. en Mecatronica'), 
 														('ing. en Tec. de Manufactura'),('Ing. en Sistemas Automotrices');
+select * from alumnos;
 

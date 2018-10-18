@@ -8,8 +8,8 @@
 
                     $module = 'views/modules/'.$enlaces.'.php';            
             }
-            else if ($enlaces = 'index') { $module = 'views/modules/dashboard.php'; }
-            else if ($enlaces = 'ok') {$module = 'views/modules/dashboard.php';}
+            else if ($enlaces === 'index') { $module = 'views/modules/dashboard.php'; }
+            else if ($enlaces === 'ok') {$module = 'views/modules/dashboard.php';}
             return $module;
         }
     }

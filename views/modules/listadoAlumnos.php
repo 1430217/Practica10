@@ -44,25 +44,12 @@
                   <th>Eliminar</th>
                   <th>Visualizar</th>
                 </tr>
-                <tr>
-                  <td>1430217</td>
-                  <td>Gonzalo Cesar Raymundo Marténez Reséndez</td>
-                  <td>ITI</td>
-                  <td>Marco Aurelio Nuño Maganda</td>
-                  <td><button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></button></td>
-                  <td><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-                  <td><button class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></button></td>
-                </tr>
-
-                <tr>
-                  <td>1430471</td>
-                  <td>Jesús Antonio Vega Rodríguez</td>
-                  <td>ITI</td>
-                  <td>Jorge Arturo Hernandez Almazan</td>
-                  <td><button class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></button></td>
-                  <td><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-                  <td><button class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></button></td>
-                </tr>
+                <tbody>
+                  <?php 
+                    $mvc = new MvcController();
+                    $mvc->getAlumnosController();
+                  ?>
+                </tbody>
             </table>
         </div>
     </div>

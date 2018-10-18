@@ -89,11 +89,40 @@
 
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Navegación</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li><a href="index.php?action=listadoAlumnos"><i class="fa fa-link"></i> <span>Listado de alumnos</span></a></li>
-        <li><a href="index.php?action=listadoTutorias"><i class="fa fa-link"></i> <span>Listado de tutorias</span></a></li>
-        <li><a href="index.php?action=listadoMaestros"><i class="fa fa-link"></i> <span>Listado de maestros</span></a></li>
-        <li><a href="index.php?action=registrar"><i class="fa fa-link"></i> <span>Registro</span></a></li>
+        <li>
+          <a href="index.php?action=listadoAlumnos">
+              <small class="label pull-left bg-purple"><i class="fa fa-users fa-2x"></i> </small>
+              <span>Alumnos</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="index.php?action=listadoMaestros">
+              <small class="label pull-left bg-blue"><i class="fa fa-graduation-cap fa-2x"></i> </small>
+              <span>Tutores</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="index.php?action=listadoTutorias">
+              <div class="label pull-left bg-orange"><i class="fa fa-commenting-o fa-2x"></i> </div>
+              <span>Listado de tutorias</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="index.php?action=registrar">
+              <small class="label pull-left bg-red"><i class="fa fa-pencil-square-o fa-2x"></i> </small>
+              <span>Registro</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="index.php?action=addAlumnos">
+              <small class="label pull-left bg-green"><i class="fa fa-pencil-square-o fa-2x"></i> </small>
+              <span>Registro de alumnos</span>
+          </a>
+        </li>
 
       </ul>
     </section>

@@ -25,7 +25,7 @@
         <div class="col-lg-3 col-xs-6">
             <div class="small-box bg-blue">
                 <div class="inner">
-                    <h3>150</h3>
+                    <h3><?$mvc->getCountAlumnos()?></h3>
                     <p>Alumnos</p>
                 </div>
                 <div class="icon">
@@ -44,7 +44,7 @@
                 <div class="icon">
                     <i class="fa fa-institution"></i>
                 </div>
-                <a href="#" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="index.php?action=listadoMaestros" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
 
@@ -84,7 +84,7 @@
         <div class="col-lg-4 col-xs-4">
             <div class="small-box bg-red">
                 <div class="inner">
-                    <h3>150</h3>
+                    <h3><?$mvc->getCountAlumnos()?></h3>
                     <p>Tutorados</p>
                 </div>
                 <div class="icon">
@@ -110,7 +110,7 @@
         <div class="col-lg-4 col-xs-4">
             <div class="small-box bg-blue">
                 <div class="inner">
-                    <h3>150</h3>
+                    <h3>50</h3>
                     <p>Tutorias</p>
                 </div>
                 <div class="icon">
@@ -128,7 +128,7 @@
         <div class="col-lg-6 col-xs-6">
             <div class="small-box bg-purple">
                 <div class="inner">
-                    <h3>150</h3>
+                    <h3><?php $mvc->getCountAlumnos();?></h3>
                     <p>Alumnos</p>
                     <br><br>
                 </div>
@@ -142,14 +142,14 @@
         <div class="col-lg-6 col-xs-6">
             <div class="small-box bg-blue">
                 <div class="inner">
-                    <h3>150</h3>
+                    <h3><?php $mvc->getCountMaestros();?></h3>
                     <p>Tutores/Maestros</p>
                     <br><br>
                 </div>
                 <div class="icon">
                     <i class="fa fa-user"></i>
                 </div>
-                <a href="#" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="index.php?action=listadoMaestros" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
 
@@ -161,7 +161,7 @@
                     <br><br>
                 </div>
                 <div class="icon">
-                    <i class="fa fa-users"></i>
+                    <i class="fa fa-commenting-o"></i>
                 </div>
                 <a href="#" class="small-box-footer">Mas información <i class="fa fa-arrow-circle-right"></i></a>
             </div>

@@ -17,31 +17,31 @@
 
     <form method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Nombre completo">
+        <input type="text" class="form-control" placeholder="Nombre completo" name="nombre">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Matricula">
+        <input type="text" class="form-control" placeholder="Matricula" name="matricula">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
 
       <div class="form-group">
-            <!-- <select class="form-control">
-            <option selected disabled>Carrera</option>-->
+          <select name="idCarrera" class="form-control">
+            <option selected disabled>Carrera</option>
               <?php
                 $mvc = new MvcController();
                 $mvc->getCarrerasCmb();
               ?>
-          <!--</select>-->
+          </select>
       </div>
 
         <div class="form-group">
-            <select class="form-control">
+            <select name="idMaestro" class="form-control">
             <option selected disabled>Tutor</option>
-              <option>Marco Aurelio Nuño Maganda</option>
-              <option>Mario Humberto Rodríguez Chavez</option>
-              <option>Jorge Arturo Hernandez Almazan </option>
+              <?php
+                $mvc->getMaestrosCmb();
+              ?>
           </select>
         </div>
 
@@ -55,7 +55,24 @@
     </form>
   </div>
 
+  <?php
+        echo '<br>'.$_POST['nombre'];
+        echo '<br>'.$_POST['matricula'];
+        echo '<br>'.$_POST['idCarrera'];
+        echo '<br>'.$_POST['idMaestro'];
+        echo '<br>';
+  ?>
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+<?php
+  $mvc->registrarAlumnoController();
+  
+  if (isset($_GET['action'])) {
+
+		if ($_GET['action'] === 'ok') 
+			echo 'Registro Exitoso';
+	}
+?>
