@@ -87,42 +87,72 @@
         </div>
       </form>
 
+      
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Navegación</li>
-        <li>
-          <a href="index.php?action=listadoAlumnos">
-              <small class="label pull-left bg-purple"><i class="fa fa-users fa-2x"></i> </small>
-              <span>Alumnos</span>
-          </a>
+
+        <!-- Menú desplegable-->
+        <li class="treeview">
+          <a href="#">
+          <small class="label pull-left bg-purple"><i class="fa fa-user fa-fw fa-2x"></i></small>
+            <span>Alumnos</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+
+            <ul class="treeview-menu">
+              <li>
+                <a href="index.php?action=listadoAlumnos">
+                  <small class="label pull-left bg-purple"><i class="fa fa-user fa-fw"></i> </small>
+                    <span>Listado de Alumnos</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="index.php?action=addAlumnos">
+                  <small class="label pull-left bg-green"><i class="fa fa-pencil-square-o fa-fw"></i> </small>
+                  <span>Registro de alumnos</span>
+                </a>
+              </li>
+
+            </ul>
         </li>
+        <!--./ Finaliza el menú desplegable -->
+
+        <!--<li>
+          <a href="index.php?action=listadoAlumnos">
+              <small class="label pull-left bg-purple"><i class="fa fa-user fa-fw fa-2x"></i> </small>
+              <span>Listado de Alumnos</span>
+          </a>
+        </li>-->
 
         <li>
           <a href="index.php?action=listadoMaestros">
-              <small class="label pull-left bg-blue"><i class="fa fa-graduation-cap fa-2x"></i> </small>
+              <small class="label pull-left bg-blue"><i class="fa fa-graduation-cap fa-fw fa-2x"></i> </small>
               <span>Tutores</span>
           </a>
         </li>
 
         <li>
           <a href="index.php?action=listadoTutorias">
-              <div class="label pull-left bg-orange"><i class="fa fa-commenting-o fa-2x"></i> </div>
+              <div class="label pull-left bg-orange"><i class="fa fa-commenting-o fa-fw fa-2x"></i> </div>
               <span>Listado de tutorias</span>
           </a>
         </li>
 
         <li>
           <a href="index.php?action=registrar">
-              <small class="label pull-left bg-red"><i class="fa fa-pencil-square-o fa-2x"></i> </small>
+              <small class="label pull-left bg-red"><i class="fa fa-pencil-square-o fa-fw fa-2x"></i> </small>
               <span>Registro</span>
           </a>
         </li>
 
-        <li>
+        <!--<li>
           <a href="index.php?action=addAlumnos">
-              <small class="label pull-left bg-green"><i class="fa fa-pencil-square-o fa-2x"></i> </small>
+              <small class="label pull-left bg-green"><i class="fa fa-pencil-square-o fa-fw fa-2x"></i> </small>
               <span>Registro de alumnos</span>
           </a>
-        </li>
+        </li>-->
 
       </ul>
     </section>
